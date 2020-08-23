@@ -17,17 +17,7 @@ namespace codewars_solutions
 
         public string CreatePhoneNumberFunc(int[] numbers)
         {
-            StringBuilder phoneNumber = new StringBuilder();
-            phoneNumber.Append("(");
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                if(i==3)
-                { phoneNumber.Append(") "); }
-                else if (i == 6) { phoneNumber.Append("-"); }
-
-                phoneNumber.Append(numbers[i]);
-            }
-            return phoneNumber.ToString();
+            return long.Parse(string.Concat(numbers)).ToString("(000) 000-0000");
         }
     }
 }
