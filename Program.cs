@@ -7,7 +7,7 @@ namespace codewars_solutions
         static void Main(string[] args)
         {
             Console.WriteLine("Beginning execution...");
-            ISolutionRunner solution = new CreatePhoneNumber();
+            ISolutionRunner solution = new MarineDecorator();
             solution.Run();
             Console.ReadLine();
         }
