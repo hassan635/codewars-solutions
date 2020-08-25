@@ -48,7 +48,7 @@ namespace codewars_solutions
 
         public int Damage { get { return ++_marine.Damage; } set { } }
 
-        public int Armor { get; set; }
+        public int Armor { get { return _marine.Armor; } set { } }
     }
 
     public class MarineArmorUpgrade : IMarine
@@ -60,7 +60,7 @@ namespace codewars_solutions
             _marine = new Marines(marine.Damage, marine.Armor);
         }
 
-        public int Damage { get; set; }
+        public int Damage { get { return _marine.Damage; } set { } }
 
         public int Armor { get { return ++_marine.Armor; } set { } }
     }
